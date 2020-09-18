@@ -1,0 +1,14 @@
+{
+  "defaultSource": "/",
+  "defaultSyncOptions": "",
+  "remotes": [
+    {
+      "name": "google-drive",
+      "source": "/",
+      "destination": "/var/target",
+      "syncOptions": "--fast-list",
+      "syncLocalToRemote": true,
+      "cronExpression": "0 1 * * *"
+    }
+  ]
+}
