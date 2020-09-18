@@ -15,8 +15,8 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm install --production
 
-COPY lib .
-COPY etc .
+COPY lib ./lib
+COPY etc ./etc
 COPY etc/rclone.conf /root/.config/rclone/rclone.conf.example
 
 CMD ["node", "lib/server.js"]
